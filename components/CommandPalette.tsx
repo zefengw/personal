@@ -130,7 +130,7 @@ export function CommandPalette({
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="flex-1 bg-transparent border-none outline-none text-sm text-on-surface placeholder:text-on-surface-variant/50 font-body"
+              className="flex-1 bg-transparent border-none outline-none text-base md:text-sm text-on-surface placeholder:text-on-surface-variant/50 font-body"
               placeholder="Search for actions..."
             />
           </div>

@@ -167,17 +167,6 @@ export function AboutContent({ onNavigate }: AboutContentProps) {
             ))}
           </div>
         </div>
-        <p className="font-label text-xs uppercase tracking-[0.4em] text-on-surface-variant mb-4">
-          Press{" "}
-          <kbd className="px-1.5 py-0.5 bg-surface-container-low rounded-sm text-[10px] mx-1">
-            ⌘K
-          </kbd>{" "}
-          or{" "}
-          <kbd className="px-1.5 py-0.5 bg-surface-container-low rounded-sm text-[10px] mx-1">
-            Ctrl+K
-          </kbd>{" "}
-          to navigate
-        </p>
       </footer>
     </div>
   );

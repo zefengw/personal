@@ -91,6 +91,12 @@ export default function Home() {
     return () => window.removeEventListener("keydown", handleKey);
   }, []);
 
+  // Scroll content to top when active tab changes
+  useEffect(() => {
+    const el = document.getElementById("editor-content");
+    if (el) el.scrollTo(0, 0);
+  }, [activeTabId]);
+
   // Track real-time cursor position + move cursor highlight dot
   useEffect(() => {
     function handleMouseMove(e: MouseEvent) {
@@ -316,7 +322,7 @@ export default function Home() {
 
       {/* Mobile sidebar overlay — outside aside to escape sticky stacking context */}
       {sidebarVisible && (
-        <div className="md:hidden fixed inset-0 z-40 flex">
+        <div className="md:hidden fixed inset-0 z-60 flex">
           <div
             className="absolute inset-0 bg-background/60"
             onClick={() => setSidebarVisible(false)}
@@ -378,7 +384,7 @@ export default function Home() {
       </main>
 
       {/* Status Bar */}
-      <footer className="fixed bottom-0 w-full h-6 bg-primary-container text-on-primary-container font-label text-[10px] uppercase flex justify-between px-3 items-center z-50">
+      <footer className="fixed bottom-0 w-full h-6 bg-primary-container text-on-primary-container font-label text-[10px] uppercase hidden md:flex justify-between px-3 items-center z-50">
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-1 px-2 h-full">
             <span className="material-symbols-outlined text-[12px]">

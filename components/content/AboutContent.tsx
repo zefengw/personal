@@ -43,10 +43,10 @@ export function AboutContent({ onNavigate }: AboutContentProps) {
         <div className="md:col-span-8">
           <div className="mb-8">
             <h2 className="font-headline text-3xl font-bold text-on-surface tracking-tight mb-1">
-              Your Name
+              Jack Wang
             </h2>
             <p className="font-label text-sm text-tertiary font-medium uppercase tracking-widest mb-6">
-              Software Engineer &bull; Builder &bull; Writer
+              Software Engineer &bull; Builder &bull; Entrepreneur
             </p>
             <div className="space-y-4 text-on-surface-variant leading-relaxed">
               <p>
@@ -79,21 +79,21 @@ export function AboutContent({ onNavigate }: AboutContentProps) {
                 {
                   icon: "work",
                   label: "Work Experience",
-                  desc: "Engineering roles and contributions",
+                  desc: "Engineering roles, contributions, and leadership",
                   fileId: "experience",
                 },
                 {
                   icon: "deployed_code",
                   label: "Projects",
-                  desc: "Open-source work and experiments",
+                  desc: "Open-source work, experiments, and side projects",
                   fileId: "featured-projects",
                 },
-                {
-                  icon: "edit_note",
-                  label: "Writing",
-                  desc: "Technical articles and dev notes",
-                  fileId: "articles",
-                },
+                // {
+                //   icon: "edit_note",
+                //   label: "Writing",
+                //   desc: "Technical articles, philosphical musings, and ideas",
+                //   fileId: "articles",
+                // },
                 {
                   icon: "picture_as_pdf",
                   label: "Resume",
@@ -130,9 +130,9 @@ export function AboutContent({ onNavigate }: AboutContentProps) {
       {/* Status section */}
       <div className="border-t border-outline-variant/10 pt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
-          { label: "Location", value: "San Francisco, CA" },
+          { label: "Location", value: "Waterloo, ON" },
           { label: "Status", value: "Open to opportunities" },
-          { label: "Focus", value: "Distributed Systems" },
+          { label: "Focus", value: "AI, QC, and Web3" },
           { label: "Experience", value: "6+ years" },
         ].map((item) => (
           <div

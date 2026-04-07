@@ -13,7 +13,7 @@ const SHORTCUT_MAP: Record<string, string> = {
   "nav-home": "H",
   "nav-experience": "E",
   "nav-projects": "P",
-  "nav-writing": "W",
+  // "nav-writing": "W",
   "nav-resume": "R",
   "nav-stack": "S",
   "link-x": "X",

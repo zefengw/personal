@@ -8,7 +8,7 @@ import { AboutContent } from "@/components/content/AboutContent";
 import { ExperienceContent } from "@/components/content/ExperienceContent";
 import { StackContent } from "@/components/content/StackContent";
 import { ProjectsContent } from "@/components/content/ProjectsContent";
-import { WritingContent } from "@/components/content/WritingContent";
+// import { WritingContent } from "@/components/content/WritingContent";
 import { ResumeContent } from "@/components/content/ResumeContent";
 import {
   fileTree,
@@ -29,7 +29,7 @@ const CONTENT_MAP: Record<
   experience: ExperienceContent,
   "stack-config": StackContent,
   "featured-projects": ProjectsContent,
-  articles: WritingContent,
+  // articles: WritingContent,
   resume: ResumeContent,
 };
 
